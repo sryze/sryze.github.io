@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Tools</title>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113857868-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -9,25 +10,39 @@
       gtag('js', new Date());
       gtag('config', 'UA-113857868-1');
     </script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
       (adsbygoogle = window.adsbygoogle || []).push({
         google_ad_client: "ca-pub-3144813696343792",
         enable_page_level_ads: true
       });
     </script>
+
     <link rel="stylesheet" href="tools.css">
+    <script src="tools.js"></script>
   </head>
+
   <body>
     <main>
       <h1>Tools</h1>
-      <select>
-        <option selected disabled>Select something</option>
+      <select id="converter-select">
+        <option value="_" selected disabled>Select something</option>
         <option value="to-uppercase">UPPERCASE</option>
         <option value="to-lowercase">lowercase</option>
       </select>
-      <textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
-      <button>Convert</button>
+      <textarea id="input-area"
+                autocomplete="off" 
+                autocorrect="off" 
+                autocapitalize="off" 
+                spellcheck="false"></textarea>
+      <button id="convert-button">Convert</button>
+      <textarea id="output-area"
+                autocomplete="off" 
+                autocorrect="off" 
+                autocapitalize="off" 
+                spellcheck="false"
+                readonly></textarea>
     <main>
   </body>
 </html>
